@@ -14,6 +14,8 @@ for multiple studies (studies are elaborated one after another usign nultiple th
 
 `./pipeline.sh -sg $(ls | greap "study_")`
 
+N.B. At the moement pipeline.sh = script2.sh
+
 # THIS PROJECT IS NOT FINISHED
 TODO:
 - fix reports
