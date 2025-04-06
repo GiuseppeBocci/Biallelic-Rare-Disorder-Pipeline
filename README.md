@@ -10,9 +10,9 @@ Professor: [Chiara Matteo](https://www.unimi.it/it/ugov/person/matteo-chiara)
 
 `./pipeline.sh -sg study` (use multiple threads)
 
-for multiple studies (studies are elaborated one after another usign nultiple threads for each one)
+for multiple studies (studies are elaborated one after another usign multiple threads for each one)
 
-`./pipeline.sh -sg $(ls | greap "study_")`
+`./pipeline.sh -sg $(ls | grep "study_")` => `./pipeline.sh -sg study_1 study_2 ...`
 
 N.B. At the moement pipeline.sh = script2.sh
 
