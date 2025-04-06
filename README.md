@@ -22,6 +22,7 @@ N.B. At the moment pipeline.sh = script2.sh
 # THIS PROJECT IS NOT FINISHED
 TODO:
 - fix reports
+- documentation and readme
 - multiallelic sites
 - add bed files
 - pipeline in nexflow/snakemake
