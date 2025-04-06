@@ -28,15 +28,14 @@ for snp in res:
 	if "transcript_consequences" in snp:
 		for trc in snp["transcript_consequences"]:
 			if trc["impact"] == "HIGH" or trc["impact"] == "MODERATE":
-				if "sift_score" in trc and "polypen_prediction" in trc:
-					if not(trc["sift_score"] < 0.05 and trc["polypen_prediction"] > 0.446):
+				if "sift_score" in trc and "polyphen_score" in trc:
+					if not(trc["sift_score"] < 0.05 and trc["polyphen_score"] > 0.446):
 						continue
 				is_relevant = True
 				if "biotype" in trc:
 					biotypes.append(trc["biotype"])
 				else:
 					biotypes.append('-')
-				# print(trc)
 				if "phenotypes" in trc:
 					phenotypes.append([phe["phenotype"] for phe in trc["phenotypes"] if phe["source"] in annotation_sources])
 				else:
