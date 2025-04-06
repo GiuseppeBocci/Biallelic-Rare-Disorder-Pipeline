@@ -14,7 +14,7 @@ for multiple studies (studies are elaborated one after another usign multiple th
 
 `./pipeline.sh -sg $(ls | grep "study_")` => `./pipeline.sh -sg study_1 study_2 ...`
 
-N.B. At the moement pipeline.sh = script2.sh
+N.B. At the moment pipeline.sh = script2.sh
 
 # THIS PROJECT IS NOT FINISHED
 TODO:
